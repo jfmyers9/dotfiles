@@ -1,0 +1,3 @@
+# Search Commands with Same Prefix
+"\e[A": history-search-backward
+"\e[B": history-search-forward
