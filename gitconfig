@@ -1,0 +1,10 @@
+[user]
+	email = jfmyers9@gmail.com
+	name = James Myers
+[push]
+	recurseSubmodule=check
+[url "git@github.com:"]
+	pushInsteadOf = https://github.com/
+[alias]
+	co = checkout
+	ci = commit
