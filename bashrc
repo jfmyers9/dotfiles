@@ -30,3 +30,10 @@ source /usr/share/doc/pkgfile/command-not-found.bash
 
 # Aliases
 alias gst='git status' # I can't live without this one.
+
+# Functions
+
+pullify() {
+    git config --add remote.origin.fetch '+refs/pull/*/head:refs/remotes/origin/pr/*'
+    git fetch origin
+}
