@@ -8,3 +8,5 @@
 [alias]
 	co = checkout
 	ci = commit
+[http]
+	cookiefile = /home/jfmyers9/.gitcookies
