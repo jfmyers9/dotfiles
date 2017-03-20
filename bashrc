@@ -30,8 +30,19 @@ export EDITOR=vim
 # Missing Commands
 source /usr/share/doc/pkgfile/command-not-found.bash
 
+# Default BOSH Target
+export BOSH_ENVIRONMENT=lite
+
 # Functions
 pullify() {
     git config --add remote.origin.fetch '+refs/pull/*/head:refs/remotes/origin/pr/*'
     git fetch origin
+}
+
+load_secrets() {
+    encfs ~/.secrets/ ~/secrets/
+}
+
+unload_secrets() {
+    fusermount -u ~/secrets/
 }
