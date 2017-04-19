@@ -168,7 +168,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # I3 Lock Screen
-set $Locker i3lock -i /home/jfmyers9/desktop.png -f && sleep 1
+set $Locker i3lock -i ~/desktop.png -f && sleep 1
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
@@ -184,7 +184,7 @@ mode "$mode_system" {
     bindsym Escape mode "default"
 }
 bindsym $mod+q mode "$mode_system"
-exec xautolock -time 10 -locker $Locker &
+exec --no-startup-id xautolock -time 10 -locker $Locker
 
 # jump to urgent window
 bindsym $mod+x [urgent=latest] focus
