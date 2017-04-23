@@ -1,6 +1,9 @@
 # set modifier key to super
 set $mod Mod4
 
+# focus not follow mouse
+focus_follows_mouse no
+
 # font
 font xft:Inconsolata Medium 8
 
