@@ -34,15 +34,42 @@ source /usr/share/doc/pkgfile/command-not-found.bash
 export BOSH_ENVIRONMENT=lite
 
 # Functions
+
+## Adds remotes for each exiting PR
 pullify() {
     git config --add remote.origin.fetch '+refs/pull/*/head:refs/remotes/origin/pr/*'
     git fetch origin
 }
 
+## Encrypted secrets helpers
 load_secrets() {
     encfs ~/.secrets/ ~/secrets/
 }
 
 unload_secrets() {
     fusermount -u ~/secrets/
+}
+
+## Wifi helpers
+wifi_new_connection() {
+    ssid=$1
+    password=$2
+    nmcli d wifi connect "$ssid" password "$password"
+}
+
+wifi_connect() {
+    ssid=$1
+    nmcli c up "$ssid"
+}
+
+wifi_disconnect() {
+    nmcli d disconnect wlp58s0
+}
+
+wifi_list_connections() {
+    nmcli c
+}
+
+wifi_list() {
+    nmcli d wifi list
 }

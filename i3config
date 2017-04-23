@@ -189,9 +189,6 @@ exec --no-startup-id xautolock -time 10 -locker $Locker
 # jump to urgent window
 bindsym $mod+x [urgent=latest] focus
 
-# start networkmanager
-exec --no-startup-id nm-applet
-
 # start redshift
 exec --no-startup-id redshift-gtk
 
