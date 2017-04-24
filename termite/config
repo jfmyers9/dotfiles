@@ -1,5 +1,12 @@
 [options]
-font = inconsolata 10
+allow_bold = true
+browser = chromium
+clickable_url = false
+cursor_blink = system
+cursor_shape = block
+dynamic_title = true
+font = Source Code Pro 9
+mouse_autohide = true
 
 [colors]
 # Base16 Ocean
