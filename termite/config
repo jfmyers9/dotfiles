@@ -1,12 +1,14 @@
 [options]
 allow_bold = true
+audible_bell = false
 browser = chromium
-clickable_url = false
+clickable_url = true
 cursor_blink = system
 cursor_shape = block
 dynamic_title = true
 font = Source Code Pro 9
 mouse_autohide = true
+urgent_on_bell = true
 
 [colors]
 # Base16 Ocean
