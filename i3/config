@@ -187,7 +187,7 @@ mode "$mode_system" {
     bindsym Escape mode "default"
 }
 bindsym $mod+q mode "$mode_system"
-exec --no-startup-id xautolock -time 10 -locker $Locker
+exec --no-startup-id xautolock -time 10 -locker '$Locker'
 
 # jump to urgent window
 bindsym $mod+x [urgent=latest] focus
