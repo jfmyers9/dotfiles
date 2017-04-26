@@ -12,4 +12,7 @@ unclutter -root -visible &
 # start pulse audio
 start-pulseaudio-x11
 
+# update key repeat rate
+xset r rate 200 30
+
 exec /usr/bin/i3
