@@ -73,3 +73,14 @@ wifi_list_connections() {
 wifi_list() {
     nmcli d wifi list
 }
+
+## DB Helpers
+start_mysql() {
+    sudo cp -r /var/lib/mysql/. /var/lib/mysqldata
+    sudo chown -R mysql:mysql /var/lib/mysqldata
+    sudo systemctl start mariadb
+}
+
+start_postgres() {
+    sudo systemctl start postgresql
+}
