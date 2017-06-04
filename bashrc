@@ -33,6 +33,16 @@ source /usr/share/doc/pkgfile/command-not-found.bash
 # Default BOSH Target
 export BOSH_ENVIRONMENT=lite
 
+# Start GPG Agent and SSH_AUTH_SOCK
+if ! pgrep -x -u "${USER}" gpg-agent >/dev/null 2>&1; then
+  gpg-connect-agent /bye >/dev/null 2>&1
+fi
+
+unset SSH_AGENT_PID
+if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
+  export SSH_AUTH_SOCK="/run/user/$UID/gnupg/S.gpg-agent.ssh"
+fi
+
 # Functions
 
 ## Adds remotes for each exiting PR
