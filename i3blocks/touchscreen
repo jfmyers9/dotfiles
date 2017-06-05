@@ -1,0 +1,20 @@
+#!/bin/bash
+
+enabled() {
+  xinput list-props "ELAN Touchscreen" | grep "Device Enabled" | cut -d':' -f2 | grep 1 > /dev/null
+}
+
+# Left click
+if [[ "${BLOCK_BUTTON}" -eq 1 ]]; then
+  if enabled; then
+    xinput disable "ELAN Touchscreen"
+  else
+    xinput enable "ELAN Touchscreen"
+  fi
+fi
+
+if enabled; then
+  echo 
+else
+  echo 
+fi
