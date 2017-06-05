@@ -94,3 +94,12 @@ start_mysql() {
 start_postgres() {
     sudo systemctl start postgresql
 }
+
+## Touchscreen helpers
+enable_touchscreen() {
+  xinput enable "ELAN Touchscreen"
+}
+
+disable_touchscreen() {
+  xinput disable "ELAN Touchscreen"
+}
