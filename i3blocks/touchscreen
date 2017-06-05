@@ -4,6 +4,8 @@ enabled() {
   xinput list-props "ELAN Touchscreen" | grep "Device Enabled" | cut -d':' -f2 | grep 1 > /dev/null
 }
 
+echo -n "<span color='#eec3c3'>  </span>"
+
 # Left click
 if [[ "${BLOCK_BUTTON}" -eq 1 ]]; then
   if enabled; then
@@ -14,7 +16,7 @@ if [[ "${BLOCK_BUTTON}" -eq 1 ]]; then
 fi
 
 if enabled; then
-  echo 
+  echo "<span color='green'></span>"
 else
-  echo 
+  echo "<span color='red'></span>"
 fi
