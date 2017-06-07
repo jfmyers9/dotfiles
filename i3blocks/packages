@@ -1,12 +1,12 @@
 #!/bin/bash
 
 updates=$(checkupdates)
-count=$($updates | wc -l)
+count=$(echo -n "$updates" | wc -l)
 
 
 if [[ "${count}" -gt 0 ]]; then
   if [[ "${BLOCK_BUTTON}" -eq 1 ]]; then
-    notify-send Packages $updates
+    notify-send Packages "$updates" --icon=dialog-information
   fi
 fi
 
