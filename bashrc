@@ -31,14 +31,14 @@ export EDITOR=vim
 source /usr/share/doc/pkgfile/command-not-found.bash
 
 # Default BOSH Target
-export BOSH_ENVIRONMENT=lite
+export BOSH_ENVIRONMENT=vbox
 
 # Start GPG Agent and SSH_AUTH_SOCK
-export GPG_TTY=`tty`
 if ! pgrep -x -u "${USER}" gpg-agent >/dev/null 2>&1; then
   gpg-connect-agent /bye >/dev/null 2>&1
 fi
-echo "UPDATESTARTUPTTY" | gpg-connect-agent > /dev/null 2>&1
+export GPG_TTY=$(tty)
+gpg-connect-agent updatestartuptty /bye > /dev/null 2>&1
 
 unset SSH_AGENT_PID
 if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
