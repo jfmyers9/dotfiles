@@ -1,6 +1,7 @@
 [alias]
 	ci = commit
 	co = checkout
+	su = submodule update --init --recursive
 [http]
 	cookiefile = /home/jfmyers9/.gitcookies
 [push]

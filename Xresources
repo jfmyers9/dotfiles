@@ -44,9 +44,6 @@
 *.color14:      base0F
 *.color15:      base07
 
-Rxvt.font: xft:DejaVu Sans Mono:size=8.5
-Rxvt.scrollBar: false
-
 Xft.antialias: true
 Xft.autohint: 0
 Xft.dpi: 192
