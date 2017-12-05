@@ -82,6 +82,11 @@ wifi_list_connections() {
     nmcli c
 }
 
+wifi_remove_connection() {
+  ssid=$1
+  nmcli c delete "$ssid"
+}
+
 wifi_list() {
     nmcli d wifi list
 }
