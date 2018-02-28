@@ -4,6 +4,7 @@
 # Aliases
 alias gst='git status' # I can't live without this one.
 alias ls='ls --color=auto'
+alias vim='nvim'
 
 # PS1
 PS1='[\u@\h \W]\$ '
