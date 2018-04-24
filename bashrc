@@ -26,7 +26,7 @@ source /usr/share/chruby/chruby.sh
 chruby ruby
 
 # Editor
-export EDITOR=vim
+export EDITOR=nvim
 
 # Missing Commands
 source /usr/share/doc/pkgfile/command-not-found.bash
