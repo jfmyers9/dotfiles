@@ -14,9 +14,8 @@ export PATH=$PATH:/usr/local/go/bin
 export GOPATH=~/workspace/local-gopath
 export PATH=$PATH:~/workspace/local-gopath/bin
 
-# FZF
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-source ~/z.sh
+# Fasd
+eval "$(fasd --init auto)"
 
 # Direnv
 eval "$(direnv hook bash)"
