@@ -1,6 +1,5 @@
 acpi
 adobe-source-code-pro-fonts
-adwaita-icon-theme
 alsa-utils
 arc-gtk-theme
 aria2
@@ -23,6 +22,7 @@ coreutils
 cower
 cpupower
 cryptsetup
+ctags
 cups
 cups-pdf
 dconf-editor
@@ -42,6 +42,7 @@ eog
 epiphany
 evince
 fakeroot
+fasd
 feh
 file
 filesystem
@@ -97,7 +98,6 @@ gvfs-nfs
 gvfs-smb
 gzip
 hal
-hal-info
 hdparm
 hplip
 htop
@@ -116,9 +116,6 @@ jq
 jre7-openjdk
 lastpass-cli
 less
-lib32-alsa-plugins
-lib32-curl
-lib32-openal
 libgit2
 libreoffice-fresh
 libu2f-host
@@ -146,6 +143,7 @@ neovim
 net-tools
 netctl
 network-manager-applet
+networkmanager
 networkmanager-openvpn
 nss-mdns
 numix-circle-icon-theme-git
@@ -155,15 +153,16 @@ okular
 openssh
 otf-font-awesome-4
 pacman
+pacman-contrib
 parcellite
+pass
 patch
 pavucontrol
 pciutils
-pcmciautils
 pdfpc
 pepper-flash
 perl
-pkg-config
+pkgconf
 pkgfile
 polybar
 postgresql
@@ -176,6 +175,7 @@ python-cairo
 python-dbus
 python-greenlet
 python-pillow
+python-pip
 python2-pip
 python2-psutil
 redshift
@@ -228,7 +228,6 @@ ttf-baekmuk
 ttf-fira-sans
 ttf-font-awesome-4
 ttf-go-mono-git
-ttf-go-sans-git
 ttf-inconsolata
 ttf-liberation
 ttf-symbola
@@ -243,21 +242,23 @@ vim
 vino
 virtualbox
 vlc
-weechat
 wget
 which
 xautolock
 xcursor-human
-xcursor-neutralplus
 xdg-user-dirs-gtk
 xf86-video-intel
 xf86-video-vesa
 xfsprogs
+xorg-bdftopcf
 xorg-docs
 xorg-fonts-100dpi
 xorg-fonts-75dpi
 xorg-iceauth
 xorg-luit
+xorg-mkfontdir
+xorg-mkfontscale
+xorg-server
 xorg-server-devel
 xorg-server-xdmx
 xorg-server-xephyr
@@ -268,9 +269,11 @@ xorg-x11perf
 xorg-xbacklight
 xorg-xcmsdb
 xorg-xcursorgen
+xorg-xdpyinfo
 xorg-xdriinfo
 xorg-xev
 xorg-xgamma
+xorg-xhost
 xorg-xinit
 xorg-xinput
 xorg-xkbevd
@@ -280,7 +283,9 @@ xorg-xlsatoms
 xorg-xlsclients
 xorg-xpr
 xorg-xprop
+xorg-xrandr
 xorg-xrefresh
+xorg-xset
 xorg-xsetroot
 xorg-xvinfo
 xorg-xwd
@@ -290,4 +295,5 @@ xpdf
 xsel
 yelp
 yubico-pam
+yubikey-manager
 zoom
