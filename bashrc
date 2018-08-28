@@ -22,7 +22,7 @@ eval "$(direnv hook bash)"
 
 # Chruby
 source /usr/share/chruby/chruby.sh
-chruby ruby
+chruby ruby-2.4
 
 # Editor
 export EDITOR=nvim
