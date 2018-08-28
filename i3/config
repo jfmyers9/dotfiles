@@ -210,7 +210,6 @@ assign [class="(?i)chromium"] 2 
 assign [class="(?i)steam"] 3 
 exec --no-startup-id termite
 exec --no-startup-id chromium
-exec --no-startup-id steam
 exec i3-msg workspace 1 
 
 # alt + tab
