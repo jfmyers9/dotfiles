@@ -205,6 +205,9 @@ exec --no-startup-id dunst --config /home/jfmyers9/.config/dunst/dunstrc
 # set background
 exec --no-startup-id feh --bg-scale /home/jfmyers9/desktop.png
 
+# compton setup
+exec --no-startup-id compton -b --backend glx --vsync opengl
+
 # assign workspaces + default apps
 assign [class="(?i)chromium"] 2 
 assign [class="(?i)steam"] 3 

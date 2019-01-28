@@ -146,6 +146,7 @@ network-manager-applet
 networkmanager
 networkmanager-openvpn
 nss-mdns
+ntp
 numix-circle-icon-theme-git
 numix-icon-theme-git
 nvme-cli
@@ -223,7 +224,6 @@ totem
 tracker
 transmission-gtk
 tree
-trizen
 ttf-baekmuk
 ttf-fira-sans
 ttf-font-awesome-4
@@ -293,6 +293,7 @@ xorg-xwininfo
 xorg-xwud
 xpdf
 xsel
+yay
 yelp
 yubico-pam
 yubikey-manager
