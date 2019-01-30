@@ -6,7 +6,7 @@ clickable_url = true
 cursor_blink = system
 cursor_shape = block
 dynamic_title = true
-font = Source Code Pro 9
+font = Source Code Pro 11
 mouse_autohide = true
 urgent_on_bell = true
 
