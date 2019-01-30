@@ -110,3 +110,5 @@ enable_touchscreen() {
 disable_touchscreen() {
   xinput disable "ELAN Touchscreen"
 }
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
