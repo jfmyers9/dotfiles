@@ -3,6 +3,7 @@
 
 # Aliases
 alias gst='git status' # I can't live without this one.
+alias vim='nvim'
 
 # PS1
 PS1='[\u@\h \W]\$ '
@@ -12,8 +13,8 @@ export PATH=$PATH:/usr/local/go/bin
 export GOPATH=~/workspace/local-gopath
 export PATH=$PATH:~/workspace/local-gopath/bin
 
-# FZF
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+# Fasd
+eval "$(fasd --init auto)"
 
 # Direnv
 eval "$(direnv hook bash)"
@@ -23,21 +24,26 @@ source /usr/local/opt/chruby/share/chruby/chruby.sh
 chruby ruby
 
 # Editor
-export EDITOR=vim
+export EDITOR=nvim
 
 # Default BOSH Target
-export BOSH_ENVIRONMENT=lite
+export BOSH_ENVIRONMENT=vbox
+
+# Start GPG Agent and SSH_AUTH_SOCK
+if ! pgrep -x -u "${USER}" gpg-agent >/dev/null 2>&1; then
+  gpg-connect-agent /bye >/dev/null 2>&1
+fi
+export GPG_TTY=$(tty)
+gpg-connect-agent updatestartuptty /bye > /dev/null 2>&1
+
+unset SSH_AGENT_PID
+if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
+  export SSH_AUTH_SOCK="/Users/jamesmyers/.gnupg/S.gpg-agent.ssh"
+fi
 
 # Functions
+
 pullify() {
     git config --add remote.origin.fetch '+refs/pull/*/head:refs/remotes/origin/pr/*'
     git fetch origin
-}
-
-load_secrets() {
-    encfs ~/.secrets/ ~/secrets/
-}
-
-unload_secrets() {
-    fusermount -u ~/secrets/
 }
