@@ -22,16 +22,13 @@ eval "$(direnv hook bash)"
 
 # Chruby
 source /usr/share/chruby/chruby.sh
-chruby ruby-2.4
+chruby ruby
 
 # Editor
 export EDITOR=nvim
 
 # Missing Commands
 source /usr/share/doc/pkgfile/command-not-found.bash
-
-# Default BOSH Target
-export BOSH_ENVIRONMENT=vbox
 
 # Start GPG Agent and SSH_AUTH_SOCK
 if ! pgrep -x -u "${USER}" gpg-agent >/dev/null 2>&1; then
