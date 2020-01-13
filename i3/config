@@ -205,9 +205,6 @@ exec --no-startup-id dunst --config /home/jfmyers9/.config/dunst/dunstrc
 # set background
 exec --no-startup-id feh --bg-scale /home/jfmyers9/desktop.png
 
-# compton setup
-exec --no-startup-id compton -bc --backend glx --vsync
-
 # assign workspaces + default apps
 assign [class="(?i)firefox"] 2 
 exec --no-startup-id termite
