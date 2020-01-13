@@ -3,6 +3,7 @@ adobe-source-code-pro-fonts
 alsa-utils
 arc-gtk-theme
 aria2
+aspell-en
 autoconf
 automake
 baobab
@@ -83,6 +84,7 @@ gnome-user-share
 google-chrome
 google-cloud-sdk
 gparted
+gpmdp
 graphviz
 grep
 grilo-plugins
@@ -101,8 +103,10 @@ gzip
 hdparm
 hplip
 htop
+hub
 i3-wm
 i3blocks
+i3blocks-contrib-git
 i3lock
 i3status
 imagemagick
@@ -125,6 +129,7 @@ licenses
 linux
 linux-firmware
 linux-headers
+llvm
 logrotate
 lvm2
 m4
@@ -147,6 +152,7 @@ netctl
 network-manager-applet
 networkmanager
 networkmanager-openvpn
+npm
 nss-mdns
 ntfs-3g
 ntp
@@ -154,11 +160,12 @@ numix-circle-icon-theme-git
 numix-icon-theme-git
 nvidia
 nvme-cli
+obs-studio
 okular
+openconnect
 openssh
 os-prober
 otf-font-awesome-4
-pacman
 pacman-contrib
 parcellite
 parted
@@ -261,11 +268,9 @@ xorg-fonts-100dpi
 xorg-fonts-75dpi
 xorg-iceauth
 xorg-luit
-xorg-mkfontdir
 xorg-mkfontscale
 xorg-server
 xorg-server-devel
-xorg-server-xdmx
 xorg-server-xephyr
 xorg-server-xnest
 xorg-sessreg
@@ -298,6 +303,7 @@ xorg-xwininfo
 xorg-xwud
 xpdf
 xsel
+yarn
 yay
 yelp
 yubico-pam
