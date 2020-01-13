@@ -30,9 +30,6 @@ export EDITOR=nvim
 # Missing Commands
 source /usr/share/doc/pkgfile/command-not-found.bash
 
-# Default BOSH Target
-export BOSH_ENVIRONMENT=vbox
-
 # Start GPG Agent and SSH_AUTH_SOCK
 if ! pgrep -x -u "${USER}" gpg-agent >/dev/null 2>&1; then
   gpg-connect-agent /bye >/dev/null 2>&1
