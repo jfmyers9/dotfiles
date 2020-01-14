@@ -9,6 +9,7 @@ automake
 baobab
 bash
 bazel
+betterlockscreen
 bind-tools
 binutils
 bison
@@ -107,7 +108,8 @@ hub
 i3-wm
 i3blocks
 i3blocks-contrib-git
-i3lock
+i3lock-color
+i3lock-fancy-git
 i3status
 imagemagick
 inetutils
@@ -256,6 +258,7 @@ virtualbox
 vlc
 wget
 which
+wmctrl
 xautolock
 xcursor-human
 xdg-user-dirs-gtk
