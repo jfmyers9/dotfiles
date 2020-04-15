@@ -107,9 +107,3 @@ enable_touchscreen() {
 disable_touchscreen() {
   xinput disable "ELAN Touchscreen"
 }
-
-## Pivotal VPN
-
-connect_pivotal_vpn() {
-  sudo openconnect --protocol=gp portal-nasa.vpn.pivotal.io
-}
