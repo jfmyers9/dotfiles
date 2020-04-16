@@ -108,4 +108,8 @@ disable_touchscreen() {
   xinput disable "ELAN Touchscreen"
 }
 
+regenerate_mirrors() {
+  sudo reflector --country 'United States' --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+}
+
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
