@@ -19,15 +19,8 @@ eval "$(fasd --init auto)"
 # Direnv
 eval "$(direnv hook bash)"
 
-# Chruby
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-chruby ruby
-
 # Editor
 export EDITOR=nvim
-
-# Default BOSH Target
-export BOSH_ENVIRONMENT=vbox
 
 # Start GPG Agent and SSH_AUTH_SOCK
 if ! pgrep -x -u "${USER}" gpg-agent >/dev/null 2>&1; then
