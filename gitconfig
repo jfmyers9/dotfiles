@@ -2,12 +2,10 @@
 	ci = commit
 	co = checkout
 	su = submodule update --init --recursive
-[http]
-	cookiefile = /home/jfmyers9/.gitcookies
 [push]
 	recurseSubmodule=check
 [url "git@github.com:"]
 	pushInsteadOf = https://github.com/
 [user]
-	email = jfmyers9@gmail.com
+	email = jmyers@brex.com
 	name = James Myers
