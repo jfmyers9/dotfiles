@@ -98,4 +98,10 @@ pullify() {
   git fetch origin
 }
 
+# Nodenv
+command -v nodenv &> /dev/null && eval "$(nodenv init -)"
+
+# ASDF-VM
+source "$(brew --prefix asdf)/asdf.sh"
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
