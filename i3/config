@@ -205,19 +205,16 @@ exec --no-startup-id dunst --config /home/jfmyers9/.config/dunst/dunstrc
 # set background
 exec --no-startup-id feh --bg-scale /home/jfmyers9/desktop.png
 
+exec --no-startup-id termite
+exec i3-msg workspace 1 
+
 # assign workspaces + default apps
 assign [class="(?i)firefox"] 2 
-exec --no-startup-id termite
 exec --no-startup-id firefox
-exec i3-msg workspace 1 
 
 # start discord
 assign [class="(?i)discord"] 4 
 exec --no-startup-id discord
-
-# start google play music desktop player
-assign [class="(?i)Google Play Music Desktop Player"] 3 
-exec --no-startup-id gpmdp
 
 # start dropbox
 exec --no-startup-id dropbox
