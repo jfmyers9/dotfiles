@@ -16,8 +16,9 @@ bindsym $mod+Return exec termite
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# launch j4-dmenu-desktop
-bindsym $mod+d exec --no-startup-id j4-dmenu-desktop
+# launch rofi
+bindsym $mod+d exec --no-startup-id rofi -combi-modi window#drun#ssh -theme base16-ocean -font "hack 15" -show combi
+
 
 # change focus
 bindsym $mod+h focus left
